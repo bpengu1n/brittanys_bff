@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 
 engine = create_engine("sqlite:///test.db", echo=True)
 
-from model import Story as schema
+from model import Schema as schema
 
 
 schema.Base.metadata.create_all(engine)
